@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employee Management System </title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <style type="text/css" src="salary-manegment.css"></style>
+</head>
+
+<body style="background-color: #0a3d53;">
+    <h1 class="text-center text-light">Employee Management System</h1>
+    <div class="d-flex justify-content-center p-2" style="background-color: #f9563a;">
+        <div class="bg-light p-5">
+            <form autocomplete="off" onsubmit="onFormSubmit()" class="form-group">
+                    <div>
+                        <label for="fullName">Full Name</label>
+                        <input type="text" name="fullName" id="fullName" class="form-control" >
+                    </div>
+                    <div>
+                        <label for="empCode">EMP Code</label>
+                        <input type="text" name="empCode" id="empCode" class="form-control">
+                    </div>
+                    <div>
+                        <label for="salary">Salary</label>
+                        <input type="text" name="salary" id="salary" class="form-control">
+                    </div>
+                    <div>
+                        <label for="city">City</label><br>
+                        <input type="text" name="city" id="city" class="form-control">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit" class="btn btn-success ">
+                        <input type="reset" value="Reset" class="btn btn-warning">
+                    </div>
+                </form> 
+        </div>
+        <div class="bg-primary p-2">
+             <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>EMP Code</th>
+                            <th>Salary</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-light">
+
+                    </tbody>
+                </table>
+        </div>
+    </div>
+   
+    <script type="text/javascript" src="salary-manegment.js"></script>
+</body>
+
+</html>
